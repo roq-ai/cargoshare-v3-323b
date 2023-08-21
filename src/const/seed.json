@@ -1,0 +1,2272 @@
+[
+  {
+    "truck": [
+      {
+        "id": "669347ad-e1bc-42b4-a051-db23a8830efd",
+        "name": "Truck1",
+        "cargo_space": 52183,
+        "created_at": "2023-08-21T07:25:30.060Z",
+        "updated_at": "2023-08-20T08:05:58.868Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "54a6d9bb-5524-4fbd-b11b-e98c6272f4bf",
+        "name": "Truck2",
+        "cargo_space": 13122,
+        "created_at": "2023-08-21T05:25:58.740Z",
+        "updated_at": "2023-08-20T18:27:30.160Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "33c29ce7-010f-443f-8ac6-8c720718d5ba",
+        "name": "Truck3",
+        "cargo_space": 53702,
+        "created_at": "2023-08-20T08:41:48.427Z",
+        "updated_at": "2023-08-21T00:54:29.966Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a2587a9b-04df-4488-a652-79b54f81996e",
+        "name": "Truck4",
+        "cargo_space": 10596,
+        "created_at": "2023-08-21T05:43:59.239Z",
+        "updated_at": "2023-08-20T19:02:49.718Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "cb97ee05-334d-41b2-a716-7b9d5dc16135",
+        "name": "Truck5",
+        "cargo_space": 95975,
+        "created_at": "2023-08-20T14:32:25.601Z",
+        "updated_at": "2023-08-21T03:32:30.401Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "5a78b48a-470f-4968-8354-a965da5a55ce",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T17:48:07.127Z",
+        "updated_at": "2023-08-21T02:49:30.486Z",
+        "truck_id": "669347ad-e1bc-42b4-a051-db23a8830efd"
+      },
+      {
+        "id": "cb19dc27-cd2d-4357-97a7-2eaf9dd728ff",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T12:38:49.601Z",
+        "updated_at": "2023-08-20T19:38:43.142Z",
+        "truck_id": "a2587a9b-04df-4488-a652-79b54f81996e"
+      },
+      {
+        "id": "0287daaa-9b65-409c-8364-1edf2a811afb",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T16:54:05.023Z",
+        "updated_at": "2023-08-20T09:23:54.230Z",
+        "truck_id": "33c29ce7-010f-443f-8ac6-8c720718d5ba"
+      },
+      {
+        "id": "fccbd98c-7949-4fab-9d26-7a544d63e3ad",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-21T00:24:04.473Z",
+        "updated_at": "2023-08-21T04:32:48.386Z",
+        "truck_id": "669347ad-e1bc-42b4-a051-db23a8830efd"
+      },
+      {
+        "id": "0cb4b47e-65b7-4a5f-a169-fd96f5571455",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-20T10:03:31.851Z",
+        "updated_at": "2023-08-20T12:39:43.408Z",
+        "truck_id": "669347ad-e1bc-42b4-a051-db23a8830efd"
+      }
+    ],
+    "booking": [
+      {
+        "id": "f943b349-2375-4ebb-a41d-27ef9a3f8f38",
+        "cargo_space_booked": 19514,
+        "booking_cost": 26591,
+        "created_at": "2023-08-21T07:16:47.303Z",
+        "updated_at": "2023-08-21T06:11:25.226Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "cb19dc27-cd2d-4357-97a7-2eaf9dd728ff",
+        "truck_id": "a2587a9b-04df-4488-a652-79b54f81996e"
+      },
+      {
+        "id": "a7c5e65a-4fd6-4a22-9617-a6724ea34d3a",
+        "cargo_space_booked": 54613,
+        "booking_cost": 41898,
+        "created_at": "2023-08-21T03:06:14.824Z",
+        "updated_at": "2023-08-20T11:09:02.434Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "0287daaa-9b65-409c-8364-1edf2a811afb",
+        "truck_id": "54a6d9bb-5524-4fbd-b11b-e98c6272f4bf"
+      },
+      {
+        "id": "453bd39f-a84d-41db-9baa-79800dc0686a",
+        "cargo_space_booked": 9586,
+        "booking_cost": 78288,
+        "created_at": "2023-08-21T04:06:23.494Z",
+        "updated_at": "2023-08-21T02:15:13.365Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "0cb4b47e-65b7-4a5f-a169-fd96f5571455",
+        "truck_id": "54a6d9bb-5524-4fbd-b11b-e98c6272f4bf"
+      },
+      {
+        "id": "2642cd7e-641b-4bdf-adcf-efa9105c90df",
+        "cargo_space_booked": 5519,
+        "booking_cost": 64189,
+        "created_at": "2023-08-20T20:21:16.588Z",
+        "updated_at": "2023-08-20T22:26:14.259Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "5a78b48a-470f-4968-8354-a965da5a55ce",
+        "truck_id": "54a6d9bb-5524-4fbd-b11b-e98c6272f4bf"
+      },
+      {
+        "id": "8a447e6f-3b45-4cf0-bd5e-db6b9c7ad1d1",
+        "cargo_space_booked": 34644,
+        "booking_cost": 7679,
+        "created_at": "2023-08-20T20:44:53.309Z",
+        "updated_at": "2023-08-21T04:28:17.298Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "cb19dc27-cd2d-4357-97a7-2eaf9dd728ff",
+        "truck_id": "a2587a9b-04df-4488-a652-79b54f81996e"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "559d5171-ea03-4741-90ec-99eb6ed6af0d",
+        "transaction_amount": 17207,
+        "created_at": "2023-08-20T08:44:20.816Z",
+        "updated_at": "2023-08-20T21:28:21.186Z",
+        "booking_id": "2642cd7e-641b-4bdf-adcf-efa9105c90df",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "90300211-0214-4f4c-b47b-7391ca5a7cd1",
+        "transaction_amount": 93556,
+        "created_at": "2023-08-21T05:47:00.088Z",
+        "updated_at": "2023-08-21T06:57:12.330Z",
+        "booking_id": "a7c5e65a-4fd6-4a22-9617-a6724ea34d3a",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "54efe127-53f8-4262-99bf-fca10469212f",
+        "transaction_amount": 78826,
+        "created_at": "2023-08-20T18:23:24.917Z",
+        "updated_at": "2023-08-20T09:33:28.953Z",
+        "booking_id": "2642cd7e-641b-4bdf-adcf-efa9105c90df",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "b66ee7cf-0f4c-4013-b8f5-2823b3561549",
+        "transaction_amount": 99395,
+        "created_at": "2023-08-21T02:53:10.901Z",
+        "updated_at": "2023-08-20T11:48:32.504Z",
+        "booking_id": "2642cd7e-641b-4bdf-adcf-efa9105c90df",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "6c4557c0-b1db-4bf0-bc76-85e4dc7d278e",
+        "transaction_amount": 51076,
+        "created_at": "2023-08-21T02:45:41.851Z",
+        "updated_at": "2023-08-20T09:37:54.445Z",
+        "booking_id": "8a447e6f-3b45-4cf0-bd5e-db6b9c7ad1d1",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "f20fd2e4-b8cd-4e4b-816d-9256b14d160a",
+        "email": "Alden_Dooley@yahoo.com",
+        "firstName": "Anderson",
+        "lastName": "Koch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/141.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "ed6017a3-2c93-44dc-86a5-9df0af459c77",
+        "email": "Elyssa.Jaskolski47@gmail.com",
+        "firstName": "Hettie",
+        "lastName": "Cartwright",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/196.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8b6bf832-b3dd-4525-b5b2-c7fcbfb6851e",
+        "email": "Oleta97@hotmail.com",
+        "firstName": "Ludwig",
+        "lastName": "Kuvalis",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/225.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "eb3c6f41-fd86-4093-9b86-efab0bdd4f73",
+        "email": "Juston_Franecki@hotmail.com",
+        "firstName": "Marcia",
+        "lastName": "Abernathy-Reichert",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/122.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "bff44c24-320a-4853-a726-69387e379904",
+        "email": "Liana_Conroy@gmail.com",
+        "firstName": "Dillan",
+        "lastName": "Doyle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/427.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "fde68002-c236-4e42-9430-efdfbb86e786",
+        "name": "Truck1",
+        "cargo_space": 331,
+        "created_at": "2023-08-20T12:10:59.216Z",
+        "updated_at": "2023-08-20T15:50:55.788Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "06133f69-5434-47ea-aca0-e79c033a7290",
+        "name": "Truck2",
+        "cargo_space": 61318,
+        "created_at": "2023-08-21T01:26:21.148Z",
+        "updated_at": "2023-08-21T02:32:39.897Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "13966bd2-460a-4181-a48b-dce884b33b60",
+        "name": "Truck3",
+        "cargo_space": 74644,
+        "created_at": "2023-08-20T23:25:39.037Z",
+        "updated_at": "2023-08-21T07:49:45.777Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "7ec61f5d-b95e-41e6-bccd-c0397cf56a8a",
+        "name": "Truck4",
+        "cargo_space": 81975,
+        "created_at": "2023-08-20T17:30:46.024Z",
+        "updated_at": "2023-08-20T19:56:43.045Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "02124ce1-268d-45db-99aa-cd67197aaa33",
+        "name": "Truck5",
+        "cargo_space": 85346,
+        "created_at": "2023-08-20T15:42:00.903Z",
+        "updated_at": "2023-08-21T05:33:43.984Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "a04c8afb-f822-4f31-a1c2-c19af3c94246",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T20:05:28.108Z",
+        "updated_at": "2023-08-20T11:00:36.369Z",
+        "truck_id": "06133f69-5434-47ea-aca0-e79c033a7290"
+      },
+      {
+        "id": "6111cfc1-e18d-4e5d-ace2-3e29c0140eda",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T16:02:02.550Z",
+        "updated_at": "2023-08-20T13:02:21.466Z",
+        "truck_id": "13966bd2-460a-4181-a48b-dce884b33b60"
+      },
+      {
+        "id": "101aca1e-b803-4c2e-853b-20a378e743c3",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T10:08:26.948Z",
+        "updated_at": "2023-08-20T23:39:00.990Z",
+        "truck_id": "06133f69-5434-47ea-aca0-e79c033a7290"
+      },
+      {
+        "id": "07ed8625-3ca0-4202-a1fa-99e531316c80",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-20T13:18:24.771Z",
+        "updated_at": "2023-08-20T12:02:58.915Z",
+        "truck_id": "fde68002-c236-4e42-9430-efdfbb86e786"
+      },
+      {
+        "id": "6b7a80f8-f916-4b51-838f-1b072f0d46ca",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-21T04:07:06.946Z",
+        "updated_at": "2023-08-20T19:43:10.571Z",
+        "truck_id": "7ec61f5d-b95e-41e6-bccd-c0397cf56a8a"
+      }
+    ],
+    "booking": [
+      {
+        "id": "f2e0a54c-9567-4e52-b351-e1de808a999e",
+        "cargo_space_booked": 64618,
+        "booking_cost": 18936,
+        "created_at": "2023-08-21T02:38:04.433Z",
+        "updated_at": "2023-08-20T15:46:24.770Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "a04c8afb-f822-4f31-a1c2-c19af3c94246",
+        "truck_id": "06133f69-5434-47ea-aca0-e79c033a7290"
+      },
+      {
+        "id": "59faed72-8bd5-4a38-ac4d-0b3dc714919d",
+        "cargo_space_booked": 86908,
+        "booking_cost": 52164,
+        "created_at": "2023-08-20T17:05:01.689Z",
+        "updated_at": "2023-08-21T03:28:15.750Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "07ed8625-3ca0-4202-a1fa-99e531316c80",
+        "truck_id": "7ec61f5d-b95e-41e6-bccd-c0397cf56a8a"
+      },
+      {
+        "id": "00e34180-0ff6-41e7-a92a-8dce66f19267",
+        "cargo_space_booked": 20203,
+        "booking_cost": 69453,
+        "created_at": "2023-08-20T19:08:38.708Z",
+        "updated_at": "2023-08-20T22:35:35.883Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "6b7a80f8-f916-4b51-838f-1b072f0d46ca",
+        "truck_id": "7ec61f5d-b95e-41e6-bccd-c0397cf56a8a"
+      },
+      {
+        "id": "b122bf83-6fdb-4c90-9f81-9fa644db50a8",
+        "cargo_space_booked": 17359,
+        "booking_cost": 73537,
+        "created_at": "2023-08-20T08:33:48.411Z",
+        "updated_at": "2023-08-21T04:58:29.272Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "6b7a80f8-f916-4b51-838f-1b072f0d46ca",
+        "truck_id": "13966bd2-460a-4181-a48b-dce884b33b60"
+      },
+      {
+        "id": "0cb34c20-30f7-45ed-ac28-b2ac2ef0c407",
+        "cargo_space_booked": 3955,
+        "booking_cost": 16165,
+        "created_at": "2023-08-21T04:33:17.308Z",
+        "updated_at": "2023-08-20T15:21:39.707Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "6b7a80f8-f916-4b51-838f-1b072f0d46ca",
+        "truck_id": "7ec61f5d-b95e-41e6-bccd-c0397cf56a8a"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "9ecd26b0-ef63-4932-ac03-f1a2640666f2",
+        "transaction_amount": 73983,
+        "created_at": "2023-08-21T04:03:09.843Z",
+        "updated_at": "2023-08-20T10:18:34.496Z",
+        "booking_id": "b122bf83-6fdb-4c90-9f81-9fa644db50a8",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "c2039bc7-96f1-46e7-86f2-c7fc6cb2e9cc",
+        "transaction_amount": 8745,
+        "created_at": "2023-08-20T16:17:53.763Z",
+        "updated_at": "2023-08-20T16:03:40.185Z",
+        "booking_id": "59faed72-8bd5-4a38-ac4d-0b3dc714919d",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "39bac687-b3b6-44dc-86d4-07ef50722740",
+        "transaction_amount": 95280,
+        "created_at": "2023-08-21T04:48:22.994Z",
+        "updated_at": "2023-08-21T03:39:46.135Z",
+        "booking_id": "0cb34c20-30f7-45ed-ac28-b2ac2ef0c407",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "4af98c2c-c5ba-4cae-9cb9-b3287b11ef31",
+        "transaction_amount": 31767,
+        "created_at": "2023-08-20T20:16:58.098Z",
+        "updated_at": "2023-08-20T13:26:55.840Z",
+        "booking_id": "b122bf83-6fdb-4c90-9f81-9fa644db50a8",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "5f15cc2a-5c0e-4cb9-81f4-e12462637b09",
+        "transaction_amount": 26207,
+        "created_at": "2023-08-20T19:32:30.360Z",
+        "updated_at": "2023-08-21T03:54:50.180Z",
+        "booking_id": "f2e0a54c-9567-4e52-b351-e1de808a999e",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "1412d3e7-16e6-480a-a139-cdf6e0dafb8f",
+        "email": "Reginald76@hotmail.com",
+        "firstName": "Ivy",
+        "lastName": "Christiansen",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34021578",
+        "tenantId": null
+      },
+      {
+        "reference": "bef2f390-6141-45dc-951e-a18ad564350d",
+        "email": "Hettie.Schmeler@gmail.com",
+        "firstName": "Lafayette",
+        "lastName": "Rath",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/694.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2034da3d-0d38-4689-a710-3afedb217fb1",
+        "email": "Katrina_Haag1@gmail.com",
+        "firstName": "Dario",
+        "lastName": "Lemke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/81041800",
+        "tenantId": null
+      },
+      {
+        "reference": "bf206278-54a5-4af5-a1aa-0a8a6dcded15",
+        "email": "Bo.Bechtelar@gmail.com",
+        "firstName": "Naomie",
+        "lastName": "Vandervort",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/875.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8b788f97-6490-46a4-9d15-66887a72d468",
+        "email": "Augusta0@yahoo.com",
+        "firstName": "Bernita",
+        "lastName": "Hudson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5536118",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "4b857897-da48-4fd4-bd31-f52cf5a776b9",
+        "name": "Truck A",
+        "cargo_space": 37774,
+        "created_at": "2023-08-20T14:02:33.238Z",
+        "updated_at": "2023-08-20T20:16:23.764Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a16370f1-3dd0-4524-bea8-30fca2d947ce",
+        "name": "Truck B",
+        "cargo_space": 57620,
+        "created_at": "2023-08-20T20:09:00.848Z",
+        "updated_at": "2023-08-21T04:27:54.108Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "33a20633-ed0a-4b78-9f28-989af1e54b7e",
+        "name": "Truck C",
+        "cargo_space": 6943,
+        "created_at": "2023-08-21T01:58:37.519Z",
+        "updated_at": "2023-08-20T14:42:11.216Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "f54c4608-a38d-4ba6-8729-8cca545a519d",
+        "name": "Truck D",
+        "cargo_space": 77174,
+        "created_at": "2023-08-20T20:01:28.906Z",
+        "updated_at": "2023-08-21T05:08:30.207Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "86c4de5e-8cbe-478b-a4ff-2380d7671452",
+        "name": "Truck E",
+        "cargo_space": 80977,
+        "created_at": "2023-08-20T22:13:27.454Z",
+        "updated_at": "2023-08-20T18:53:52.132Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "dda2b655-3a55-4034-a46f-f5a5001cb8ff",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T16:21:29.486Z",
+        "updated_at": "2023-08-20T10:32:14.105Z",
+        "truck_id": "33a20633-ed0a-4b78-9f28-989af1e54b7e"
+      },
+      {
+        "id": "3f6fc315-e21d-48b9-bc8d-75f30b88e2f6",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-21T01:49:06.436Z",
+        "updated_at": "2023-08-20T17:55:32.824Z",
+        "truck_id": "4b857897-da48-4fd4-bd31-f52cf5a776b9"
+      },
+      {
+        "id": "3d41cacb-fa32-45f3-8f5e-a4b14af12666",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-21T05:12:09.546Z",
+        "updated_at": "2023-08-21T05:17:16.181Z",
+        "truck_id": "4b857897-da48-4fd4-bd31-f52cf5a776b9"
+      },
+      {
+        "id": "dd9e0edf-6a0b-4488-a1a3-f7c3b395d34d",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-21T02:43:17.250Z",
+        "updated_at": "2023-08-21T00:45:11.781Z",
+        "truck_id": "a16370f1-3dd0-4524-bea8-30fca2d947ce"
+      },
+      {
+        "id": "d634be9d-dd46-45c1-92e4-0a58f6905591",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-21T07:34:20.610Z",
+        "updated_at": "2023-08-20T23:31:21.335Z",
+        "truck_id": "86c4de5e-8cbe-478b-a4ff-2380d7671452"
+      }
+    ],
+    "booking": [
+      {
+        "id": "cdffafc7-04e0-4064-aa0f-9c713c050dfc",
+        "cargo_space_booked": 95016,
+        "booking_cost": 43740,
+        "created_at": "2023-08-20T18:27:38.940Z",
+        "updated_at": "2023-08-21T00:45:52.876Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "d634be9d-dd46-45c1-92e4-0a58f6905591",
+        "truck_id": "f54c4608-a38d-4ba6-8729-8cca545a519d"
+      },
+      {
+        "id": "5c58b976-dd86-4ca4-aefa-39c7b7e9c566",
+        "cargo_space_booked": 56847,
+        "booking_cost": 95458,
+        "created_at": "2023-08-20T09:48:38.735Z",
+        "updated_at": "2023-08-20T12:48:02.003Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "dd9e0edf-6a0b-4488-a1a3-f7c3b395d34d",
+        "truck_id": "33a20633-ed0a-4b78-9f28-989af1e54b7e"
+      },
+      {
+        "id": "8aaa2f9f-a873-49a7-a2b9-067a635351a4",
+        "cargo_space_booked": 28565,
+        "booking_cost": 85639,
+        "created_at": "2023-08-20T16:24:41.053Z",
+        "updated_at": "2023-08-20T18:07:11.440Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "3f6fc315-e21d-48b9-bc8d-75f30b88e2f6",
+        "truck_id": "86c4de5e-8cbe-478b-a4ff-2380d7671452"
+      },
+      {
+        "id": "441a7efa-50d2-4de5-a7ba-aafcf470f9c0",
+        "cargo_space_booked": 73903,
+        "booking_cost": 99881,
+        "created_at": "2023-08-21T01:46:29.237Z",
+        "updated_at": "2023-08-21T06:25:48.376Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "d634be9d-dd46-45c1-92e4-0a58f6905591",
+        "truck_id": "a16370f1-3dd0-4524-bea8-30fca2d947ce"
+      },
+      {
+        "id": "00e775ec-6471-4014-afdf-4cfa81b3fae8",
+        "cargo_space_booked": 61390,
+        "booking_cost": 77147,
+        "created_at": "2023-08-21T05:18:49.848Z",
+        "updated_at": "2023-08-20T08:15:57.893Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "d634be9d-dd46-45c1-92e4-0a58f6905591",
+        "truck_id": "33a20633-ed0a-4b78-9f28-989af1e54b7e"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "d2a40c21-6cac-488c-b8c7-f8e8aa126116",
+        "transaction_amount": 67557,
+        "created_at": "2023-08-20T13:18:19.064Z",
+        "updated_at": "2023-08-20T14:52:46.605Z",
+        "booking_id": "00e775ec-6471-4014-afdf-4cfa81b3fae8",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "c6557909-24cc-446c-a78d-b6115e1708a5",
+        "transaction_amount": 37621,
+        "created_at": "2023-08-20T13:13:19.711Z",
+        "updated_at": "2023-08-20T07:55:31.450Z",
+        "booking_id": "00e775ec-6471-4014-afdf-4cfa81b3fae8",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "af4a3956-5086-4dc6-ab04-294f08ed710a",
+        "transaction_amount": 94340,
+        "created_at": "2023-08-20T21:30:51.376Z",
+        "updated_at": "2023-08-20T20:15:20.947Z",
+        "booking_id": "00e775ec-6471-4014-afdf-4cfa81b3fae8",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "aa6814a7-6ac3-423d-b475-8156f297f9f0",
+        "transaction_amount": 38407,
+        "created_at": "2023-08-20T21:40:51.631Z",
+        "updated_at": "2023-08-20T19:10:36.018Z",
+        "booking_id": "441a7efa-50d2-4de5-a7ba-aafcf470f9c0",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "0f67bfbe-ca45-4aac-8d73-08e6a93cf6ca",
+        "transaction_amount": 30084,
+        "created_at": "2023-08-20T22:00:31.044Z",
+        "updated_at": "2023-08-21T06:31:03.745Z",
+        "booking_id": "cdffafc7-04e0-4064-aa0f-9c713c050dfc",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "7d897257-8e88-4a77-ac43-5be61b79fb13",
+        "email": "Waylon64@hotmail.com",
+        "firstName": "Mariane",
+        "lastName": "Lang-Romaguera",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/164.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "faf85701-7701-42f0-ab85-438dc91b1735",
+        "email": "Tina.Becker-Toy@yahoo.com",
+        "firstName": "Vickie",
+        "lastName": "Hermiston",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/63805650",
+        "tenantId": null
+      },
+      {
+        "reference": "f2043105-b2ce-4ce7-87c5-56eccdbba180",
+        "email": "Ethel.Johns@yahoo.com",
+        "firstName": "Horace",
+        "lastName": "Grimes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9594079",
+        "tenantId": null
+      },
+      {
+        "reference": "f980f9df-7277-45af-a935-1660eda73a07",
+        "email": "Hailee.Mertz4@hotmail.com",
+        "firstName": "David",
+        "lastName": "Davis",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/944.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "3ad98ae1-bc81-4041-8227-9d845677041c",
+        "email": "Frederic12@hotmail.com",
+        "firstName": "Talon",
+        "lastName": "Kihn",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1046.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "bc389535-3773-4732-82f2-f1b2483122a4",
+        "name": "Truck1",
+        "cargo_space": 46183,
+        "created_at": "2023-08-20T13:46:19.444Z",
+        "updated_at": "2023-08-21T06:55:41.747Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "8cd099e9-cb79-4f77-915e-736eb397aee4",
+        "name": "Truck2",
+        "cargo_space": 88607,
+        "created_at": "2023-08-21T05:05:35.147Z",
+        "updated_at": "2023-08-20T13:52:37.353Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "7a3e8d32-6eb0-4436-b389-a08976cf23f2",
+        "name": "Truck3",
+        "cargo_space": 62966,
+        "created_at": "2023-08-20T11:27:07.780Z",
+        "updated_at": "2023-08-21T06:29:32.329Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "510e2728-f052-494c-9686-ca0da627cb70",
+        "name": "Truck4",
+        "cargo_space": 8007,
+        "created_at": "2023-08-21T07:38:36.114Z",
+        "updated_at": "2023-08-20T22:56:14.407Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a77c0ba4-e764-401a-8df3-c4cfe66d1b88",
+        "name": "Truck5",
+        "cargo_space": 71611,
+        "created_at": "2023-08-20T16:47:38.785Z",
+        "updated_at": "2023-08-20T16:44:14.752Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "96e0b3b7-8888-42f8-8c82-c632dc36daa9",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-21T04:25:42.498Z",
+        "updated_at": "2023-08-20T20:48:08.528Z",
+        "truck_id": "bc389535-3773-4732-82f2-f1b2483122a4"
+      },
+      {
+        "id": "0ecabd55-fa70-412d-81e5-821151a94e37",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T19:34:18.071Z",
+        "updated_at": "2023-08-20T22:49:02.482Z",
+        "truck_id": "bc389535-3773-4732-82f2-f1b2483122a4"
+      },
+      {
+        "id": "e2907e3b-7668-46da-8862-c1a20b47a546",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-21T06:53:18.481Z",
+        "updated_at": "2023-08-20T17:34:26.541Z",
+        "truck_id": "7a3e8d32-6eb0-4436-b389-a08976cf23f2"
+      },
+      {
+        "id": "774e1cc3-51c6-42f1-ac21-dcbca4c070cc",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-20T08:02:27.437Z",
+        "updated_at": "2023-08-20T14:06:50.533Z",
+        "truck_id": "8cd099e9-cb79-4f77-915e-736eb397aee4"
+      },
+      {
+        "id": "724d1a59-25eb-44c7-9835-d7cf0662f228",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-20T20:59:23.869Z",
+        "updated_at": "2023-08-20T12:41:03.369Z",
+        "truck_id": "bc389535-3773-4732-82f2-f1b2483122a4"
+      }
+    ],
+    "booking": [
+      {
+        "id": "7a559a90-6b74-4441-9cd9-f436341d1f9d",
+        "cargo_space_booked": 28822,
+        "booking_cost": 21758,
+        "created_at": "2023-08-21T00:37:09.329Z",
+        "updated_at": "2023-08-21T06:25:29.208Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "774e1cc3-51c6-42f1-ac21-dcbca4c070cc",
+        "truck_id": "7a3e8d32-6eb0-4436-b389-a08976cf23f2"
+      },
+      {
+        "id": "2dd21268-fc93-4e9b-b6e0-bb6e18b2341d",
+        "cargo_space_booked": 247,
+        "booking_cost": 80649,
+        "created_at": "2023-08-20T13:42:43.203Z",
+        "updated_at": "2023-08-21T07:50:12.887Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "0ecabd55-fa70-412d-81e5-821151a94e37",
+        "truck_id": "510e2728-f052-494c-9686-ca0da627cb70"
+      },
+      {
+        "id": "ea21c051-f1fa-44e1-bc6c-d772b2f90643",
+        "cargo_space_booked": 99812,
+        "booking_cost": 25340,
+        "created_at": "2023-08-20T08:55:46.521Z",
+        "updated_at": "2023-08-21T05:00:25.629Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "e2907e3b-7668-46da-8862-c1a20b47a546",
+        "truck_id": "bc389535-3773-4732-82f2-f1b2483122a4"
+      },
+      {
+        "id": "5f8810bc-29f3-4664-9569-a34cc19a3f74",
+        "cargo_space_booked": 23248,
+        "booking_cost": 13703,
+        "created_at": "2023-08-20T11:17:00.999Z",
+        "updated_at": "2023-08-21T07:26:40.850Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "0ecabd55-fa70-412d-81e5-821151a94e37",
+        "truck_id": "7a3e8d32-6eb0-4436-b389-a08976cf23f2"
+      },
+      {
+        "id": "e8526e45-1b35-4b07-a398-deecc398f18e",
+        "cargo_space_booked": 65501,
+        "booking_cost": 62754,
+        "created_at": "2023-08-21T07:07:27.818Z",
+        "updated_at": "2023-08-20T08:01:24.237Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "774e1cc3-51c6-42f1-ac21-dcbca4c070cc",
+        "truck_id": "510e2728-f052-494c-9686-ca0da627cb70"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "6a737f39-c8c9-4884-bcad-69989a8a5eb6",
+        "transaction_amount": 78740,
+        "created_at": "2023-08-20T19:25:48.837Z",
+        "updated_at": "2023-08-21T06:16:29.267Z",
+        "booking_id": "ea21c051-f1fa-44e1-bc6c-d772b2f90643",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "ada22db5-2fe3-49d5-b2f4-29dcb42cf2fe",
+        "transaction_amount": 71489,
+        "created_at": "2023-08-21T03:12:56.721Z",
+        "updated_at": "2023-08-20T11:57:19.081Z",
+        "booking_id": "e8526e45-1b35-4b07-a398-deecc398f18e",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "225982ea-9ed2-41dd-8472-efe2ab8b742a",
+        "transaction_amount": 33399,
+        "created_at": "2023-08-20T10:28:48.862Z",
+        "updated_at": "2023-08-21T07:16:04.880Z",
+        "booking_id": "ea21c051-f1fa-44e1-bc6c-d772b2f90643",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "62f2edcb-d752-4efa-a455-b92f5b04b512",
+        "transaction_amount": 54323,
+        "created_at": "2023-08-21T06:27:17.307Z",
+        "updated_at": "2023-08-20T14:04:14.322Z",
+        "booking_id": "7a559a90-6b74-4441-9cd9-f436341d1f9d",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "10f68dfd-ab40-489d-8c2e-6187ff087515",
+        "transaction_amount": 42072,
+        "created_at": "2023-08-20T18:00:53.129Z",
+        "updated_at": "2023-08-20T10:49:16.773Z",
+        "booking_id": "ea21c051-f1fa-44e1-bc6c-d772b2f90643",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5e037450-57b5-4274-bfe4-43dc64ea3437",
+        "email": "Rex50@gmail.com",
+        "firstName": "Monroe",
+        "lastName": "Marks",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/916.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c4c249bb-3acd-4416-b7db-621f647134c0",
+        "email": "Mary_Cronin@yahoo.com",
+        "firstName": "Amari",
+        "lastName": "Nienow-Roob",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53297679",
+        "tenantId": null
+      },
+      {
+        "reference": "d2ab59a9-a1a7-42ae-9d10-b552a5b2e8d6",
+        "email": "Isabella20@gmail.com",
+        "firstName": "Harley",
+        "lastName": "Kunze",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1173.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "b6755f09-20d6-463d-949d-29bf0d2c0c0c",
+        "email": "Gino_Gulgowski@hotmail.com",
+        "firstName": "Brionna",
+        "lastName": "Williamson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/292.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "982664a0-7014-43dc-bc30-eb3f3abdb72b",
+        "email": "Anita_Bartell@hotmail.com",
+        "firstName": "Rafaela",
+        "lastName": "Crist",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/70679426",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "ba04dfaf-f9e5-4851-ae13-5f6bf19e9bd2",
+        "name": "Ford F-150",
+        "cargo_space": 55409,
+        "created_at": "2023-08-20T23:10:54.946Z",
+        "updated_at": "2023-08-21T02:03:19.494Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "9eb85404-2fed-484e-9493-16bf4dc25ef6",
+        "name": "Chevrolet Silverado",
+        "cargo_space": 65660,
+        "created_at": "2023-08-21T00:06:50.712Z",
+        "updated_at": "2023-08-21T06:13:32.758Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f",
+        "name": "Toyota Tacoma",
+        "cargo_space": 43887,
+        "created_at": "2023-08-21T04:57:51.831Z",
+        "updated_at": "2023-08-21T04:50:33.149Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "5abf686d-e55a-483f-b255-a008f39969bf",
+        "name": "Dodge Ram",
+        "cargo_space": 77582,
+        "created_at": "2023-08-21T04:45:38.769Z",
+        "updated_at": "2023-08-20T10:57:35.936Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "8489a173-2ce7-4064-858d-7917a9621e9b",
+        "name": "GMC Sierra",
+        "cargo_space": 55127,
+        "created_at": "2023-08-21T06:10:06.742Z",
+        "updated_at": "2023-08-20T18:58:10.662Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "b0335596-8eb5-4d08-afda-65c2cba770ed",
+        "origin": "New York",
+        "destination": "Miami",
+        "created_at": "2023-08-20T14:36:59.847Z",
+        "updated_at": "2023-08-21T01:11:23.495Z",
+        "truck_id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f"
+      },
+      {
+        "id": "dda5642e-d3e7-4be1-9a29-9742fc632e5b",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T17:24:50.488Z",
+        "updated_at": "2023-08-21T00:15:59.222Z",
+        "truck_id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f"
+      },
+      {
+        "id": "8ac0567a-741f-4745-8058-b8acf5d2ee43",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T08:19:31.918Z",
+        "updated_at": "2023-08-20T10:23:51.921Z",
+        "truck_id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f"
+      },
+      {
+        "id": "7275de3e-7a5d-415c-8807-90d846f370ed",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-21T03:18:28.056Z",
+        "updated_at": "2023-08-20T10:18:16.534Z",
+        "truck_id": "8489a173-2ce7-4064-858d-7917a9621e9b"
+      },
+      {
+        "id": "b058becf-b2fb-4097-8358-acffcaab7662",
+        "origin": "Phoenix",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T21:19:48.594Z",
+        "updated_at": "2023-08-20T14:56:25.925Z",
+        "truck_id": "8489a173-2ce7-4064-858d-7917a9621e9b"
+      }
+    ],
+    "booking": [
+      {
+        "id": "13354fee-28a5-4625-b7bb-b1880fd3a415",
+        "cargo_space_booked": 138,
+        "booking_cost": 29802,
+        "created_at": "2023-08-20T17:28:02.137Z",
+        "updated_at": "2023-08-20T18:13:22.709Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "b0335596-8eb5-4d08-afda-65c2cba770ed",
+        "truck_id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f"
+      },
+      {
+        "id": "0d9bf49c-b80d-449e-921f-3f24f3fed706",
+        "cargo_space_booked": 18356,
+        "booking_cost": 56647,
+        "created_at": "2023-08-20T09:22:55.762Z",
+        "updated_at": "2023-08-21T04:30:17.579Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "8ac0567a-741f-4745-8058-b8acf5d2ee43",
+        "truck_id": "5abf686d-e55a-483f-b255-a008f39969bf"
+      },
+      {
+        "id": "cc152165-291d-46a3-b65b-40bc0a6f0384",
+        "cargo_space_booked": 66227,
+        "booking_cost": 54922,
+        "created_at": "2023-08-21T00:06:41.395Z",
+        "updated_at": "2023-08-21T04:29:19.782Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "b0335596-8eb5-4d08-afda-65c2cba770ed",
+        "truck_id": "9eb85404-2fed-484e-9493-16bf4dc25ef6"
+      },
+      {
+        "id": "5b46b099-9357-4181-b1c0-95751cc58cb7",
+        "cargo_space_booked": 41326,
+        "booking_cost": 63833,
+        "created_at": "2023-08-20T19:18:55.762Z",
+        "updated_at": "2023-08-21T01:50:11.271Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "b058becf-b2fb-4097-8358-acffcaab7662",
+        "truck_id": "9eb85404-2fed-484e-9493-16bf4dc25ef6"
+      },
+      {
+        "id": "9d36c83b-589e-41df-ba14-529c107c70ca",
+        "cargo_space_booked": 54737,
+        "booking_cost": 76987,
+        "created_at": "2023-08-21T05:31:01.759Z",
+        "updated_at": "2023-08-20T21:34:14.014Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "8ac0567a-741f-4745-8058-b8acf5d2ee43",
+        "truck_id": "711fc789-3955-4238-a5e0-f78c6a3fcb2f"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "eb45951a-a896-4b9d-a67a-048cfd615374",
+        "transaction_amount": 74349,
+        "created_at": "2023-08-20T10:07:29.647Z",
+        "updated_at": "2023-08-20T22:58:22.725Z",
+        "booking_id": "13354fee-28a5-4625-b7bb-b1880fd3a415",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "c587a28e-735e-4cf8-acf1-6122ae9aebd8",
+        "transaction_amount": 2284,
+        "created_at": "2023-08-20T12:25:22.228Z",
+        "updated_at": "2023-08-20T08:04:58.011Z",
+        "booking_id": "0d9bf49c-b80d-449e-921f-3f24f3fed706",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a59b81b0-48fa-414d-9838-4d228da8a92b",
+        "transaction_amount": 50014,
+        "created_at": "2023-08-21T04:17:22.151Z",
+        "updated_at": "2023-08-20T10:01:47.698Z",
+        "booking_id": "5b46b099-9357-4181-b1c0-95751cc58cb7",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "743db2cd-8b9d-4ca4-b81b-fcf86f916a1c",
+        "transaction_amount": 34370,
+        "created_at": "2023-08-21T03:39:43.735Z",
+        "updated_at": "2023-08-21T02:58:22.209Z",
+        "booking_id": "13354fee-28a5-4625-b7bb-b1880fd3a415",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "268d0c41-7a91-4723-a7eb-06affe11dc1e",
+        "transaction_amount": 97199,
+        "created_at": "2023-08-21T00:02:07.149Z",
+        "updated_at": "2023-08-20T14:05:02.654Z",
+        "booking_id": "9d36c83b-589e-41df-ba14-529c107c70ca",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "6efc0ff7-0b8c-4f45-b434-a0d116e5a981",
+        "email": "Joey.Walker78@yahoo.com",
+        "firstName": "Asa",
+        "lastName": "Okuneva",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/26503176",
+        "tenantId": null
+      },
+      {
+        "reference": "cb10757e-9d68-4dec-87db-4e4f362e8928",
+        "email": "Cheyanne.Weissnat@gmail.com",
+        "firstName": "Julie",
+        "lastName": "Mosciski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1240.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8813dda3-fa4d-4817-8591-7d8503c08c13",
+        "email": "Euna_Roob95@hotmail.com",
+        "firstName": "Willie",
+        "lastName": "Welch",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20223926",
+        "tenantId": null
+      },
+      {
+        "reference": "7a684bc6-a431-404b-80d0-ced1ca2beab2",
+        "email": "Ambrose74@hotmail.com",
+        "firstName": "Tate",
+        "lastName": "Monahan",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/172.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a1b506c4-062b-4e81-8236-7cafc44de9af",
+        "email": "Eloy.Bergnaum33@yahoo.com",
+        "firstName": "Maureen",
+        "lastName": "Weber",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1240.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "ae807003-9cd4-49d5-8f63-bf71a3cd45e8",
+        "name": "Red Truck",
+        "cargo_space": 89462,
+        "created_at": "2023-08-20T22:39:25.737Z",
+        "updated_at": "2023-08-21T06:12:59.931Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "4b8f8b13-9c95-454e-8f1c-fff33adaa35d",
+        "name": "Blue Truck",
+        "cargo_space": 72477,
+        "created_at": "2023-08-20T09:32:56.851Z",
+        "updated_at": "2023-08-20T12:11:09.184Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "87f4cfee-c9c3-4721-a23d-31d6e2dd0894",
+        "name": "Green Truck",
+        "cargo_space": 52592,
+        "created_at": "2023-08-21T06:03:44.046Z",
+        "updated_at": "2023-08-21T05:27:42.648Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "9da235b7-e68a-4f61-8794-dbf0b23209bb",
+        "name": "Yellow Truck",
+        "cargo_space": 47849,
+        "created_at": "2023-08-20T08:25:28.780Z",
+        "updated_at": "2023-08-20T18:30:36.495Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "d3a1a75f-896a-4d35-8750-d1036be04fe6",
+        "name": "Black Truck",
+        "cargo_space": 82764,
+        "created_at": "2023-08-20T23:54:03.046Z",
+        "updated_at": "2023-08-20T20:54:10.454Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "ef960406-33be-4152-a06b-2d31cec6b96f",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-21T06:48:18.092Z",
+        "updated_at": "2023-08-20T23:35:31.221Z",
+        "truck_id": "ae807003-9cd4-49d5-8f63-bf71a3cd45e8"
+      },
+      {
+        "id": "7723ce02-8bd1-4a97-8a36-fcbd11a41357",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-21T05:01:57.221Z",
+        "updated_at": "2023-08-20T17:58:11.032Z",
+        "truck_id": "ae807003-9cd4-49d5-8f63-bf71a3cd45e8"
+      },
+      {
+        "id": "99d63600-85f3-43e3-8a09-f428a7293165",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T21:32:18.879Z",
+        "updated_at": "2023-08-20T08:44:52.113Z",
+        "truck_id": "d3a1a75f-896a-4d35-8750-d1036be04fe6"
+      },
+      {
+        "id": "28f53a5b-ba5f-4b59-b27c-0cfd55d5d4c0",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-20T14:50:36.154Z",
+        "updated_at": "2023-08-20T23:16:15.918Z",
+        "truck_id": "4b8f8b13-9c95-454e-8f1c-fff33adaa35d"
+      },
+      {
+        "id": "011b604d-4035-41ee-b557-320574d7ee9e",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-20T08:54:32.394Z",
+        "updated_at": "2023-08-20T22:40:30.971Z",
+        "truck_id": "4b8f8b13-9c95-454e-8f1c-fff33adaa35d"
+      }
+    ],
+    "booking": [
+      {
+        "id": "0b1a96ac-935c-4a50-9f81-4fdc87426420",
+        "cargo_space_booked": 42394,
+        "booking_cost": 93750,
+        "created_at": "2023-08-20T13:33:30.001Z",
+        "updated_at": "2023-08-21T04:05:08.500Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "99d63600-85f3-43e3-8a09-f428a7293165",
+        "truck_id": "9da235b7-e68a-4f61-8794-dbf0b23209bb"
+      },
+      {
+        "id": "6e23f250-d096-4aad-87b4-9440f8cde2ba",
+        "cargo_space_booked": 41615,
+        "booking_cost": 78921,
+        "created_at": "2023-08-20T09:08:28.520Z",
+        "updated_at": "2023-08-20T08:55:15.876Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "7723ce02-8bd1-4a97-8a36-fcbd11a41357",
+        "truck_id": "4b8f8b13-9c95-454e-8f1c-fff33adaa35d"
+      },
+      {
+        "id": "67bf23a4-6901-47ab-84f5-27c28a037a4f",
+        "cargo_space_booked": 93685,
+        "booking_cost": 2483,
+        "created_at": "2023-08-21T03:50:50.315Z",
+        "updated_at": "2023-08-20T23:47:11.817Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "011b604d-4035-41ee-b557-320574d7ee9e",
+        "truck_id": "ae807003-9cd4-49d5-8f63-bf71a3cd45e8"
+      },
+      {
+        "id": "83c36150-74c7-4c53-9003-56b7f7b39aaa",
+        "cargo_space_booked": 29127,
+        "booking_cost": 8350,
+        "created_at": "2023-08-20T23:16:43.434Z",
+        "updated_at": "2023-08-21T02:08:02.599Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "011b604d-4035-41ee-b557-320574d7ee9e",
+        "truck_id": "d3a1a75f-896a-4d35-8750-d1036be04fe6"
+      },
+      {
+        "id": "3a027777-da4b-4d6f-9599-a7388df5f02d",
+        "cargo_space_booked": 69194,
+        "booking_cost": 69204,
+        "created_at": "2023-08-21T00:51:24.306Z",
+        "updated_at": "2023-08-21T03:51:46.310Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "ef960406-33be-4152-a06b-2d31cec6b96f",
+        "truck_id": "87f4cfee-c9c3-4721-a23d-31d6e2dd0894"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "cc71a3d0-5168-49c8-bcb9-39553eae31e0",
+        "transaction_amount": 69894,
+        "created_at": "2023-08-21T00:54:05.293Z",
+        "updated_at": "2023-08-21T01:57:03.064Z",
+        "booking_id": "67bf23a4-6901-47ab-84f5-27c28a037a4f",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a08c011e-ef0a-484c-8aa0-73a97f8b88e7",
+        "transaction_amount": 63099,
+        "created_at": "2023-08-21T04:44:51.394Z",
+        "updated_at": "2023-08-21T02:40:07.454Z",
+        "booking_id": "3a027777-da4b-4d6f-9599-a7388df5f02d",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "f37cba5a-a804-4d40-aed2-5764e02fdb8c",
+        "transaction_amount": 7797,
+        "created_at": "2023-08-20T14:59:12.523Z",
+        "updated_at": "2023-08-21T01:27:11.063Z",
+        "booking_id": "83c36150-74c7-4c53-9003-56b7f7b39aaa",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "bdab0b6b-db4e-4c9e-848e-1bc7a6d3dbd7",
+        "transaction_amount": 50224,
+        "created_at": "2023-08-21T04:47:11.198Z",
+        "updated_at": "2023-08-20T08:29:47.563Z",
+        "booking_id": "67bf23a4-6901-47ab-84f5-27c28a037a4f",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "98c03238-5e73-4858-bf9f-3b5370a02ac9",
+        "transaction_amount": 67833,
+        "created_at": "2023-08-20T23:24:19.951Z",
+        "updated_at": "2023-08-21T04:27:34.357Z",
+        "booking_id": "0b1a96ac-935c-4a50-9f81-4fdc87426420",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b0a8ece7-7914-4d63-ac3e-d2b42ab24a73",
+        "email": "Jade88@yahoo.com",
+        "firstName": "Jerome",
+        "lastName": "Heller",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/53257749",
+        "tenantId": null
+      },
+      {
+        "reference": "d62894bb-6b12-4b79-8dbb-b8ae02a8daad",
+        "email": "Asia_Bode@gmail.com",
+        "firstName": "Freeman",
+        "lastName": "Fadel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/972.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a5b68b23-72d1-4bb8-9565-8caf2f494dbb",
+        "email": "Cary.Schimmel@hotmail.com",
+        "firstName": "Aurelio",
+        "lastName": "Hagenes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82800030",
+        "tenantId": null
+      },
+      {
+        "reference": "fe271d1a-4021-4666-938e-7593eec83794",
+        "email": "Bianka_Osinski@yahoo.com",
+        "firstName": "Javon",
+        "lastName": "Crona",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/175.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "cefff908-eb81-40fa-b106-6af642096f3f",
+        "email": "Friedrich80@hotmail.com",
+        "firstName": "Anita",
+        "lastName": "Howe",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/59670708",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "ee49dbcc-9698-4925-b62c-b8a2398ef752",
+        "name": "Big Rig",
+        "cargo_space": 27332,
+        "created_at": "2023-08-20T10:58:33.609Z",
+        "updated_at": "2023-08-21T06:01:23.089Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "f64e2a40-3c07-4cab-93af-7fc7a33e79c9",
+        "name": "Cargo Hauler",
+        "cargo_space": 65492,
+        "created_at": "2023-08-21T07:46:46.202Z",
+        "updated_at": "2023-08-20T23:21:39.471Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "a35f61a0-b441-47c7-baf4-2ae576a1c3ec",
+        "name": "Delivery Express",
+        "cargo_space": 74831,
+        "created_at": "2023-08-20T10:52:13.813Z",
+        "updated_at": "2023-08-20T15:38:49.974Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "dbc6f56b-2483-4da0-b839-90e7a56b1fbd",
+        "name": "Transporter Pro",
+        "cargo_space": 87828,
+        "created_at": "2023-08-21T07:22:25.531Z",
+        "updated_at": "2023-08-20T17:39:28.446Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "4f669ccf-0595-49f9-8a28-dca81d2140fd",
+        "name": "Freight Master",
+        "cargo_space": 91837,
+        "created_at": "2023-08-20T20:11:18.863Z",
+        "updated_at": "2023-08-20T21:55:50.696Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "43585255-4202-4451-9a6e-a03affa959ec",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T20:16:37.947Z",
+        "updated_at": "2023-08-20T17:20:05.311Z",
+        "truck_id": "a35f61a0-b441-47c7-baf4-2ae576a1c3ec"
+      },
+      {
+        "id": "cebf46ec-087e-4cbf-adde-4e05ca109be3",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-21T05:45:48.467Z",
+        "updated_at": "2023-08-20T20:28:04.553Z",
+        "truck_id": "4f669ccf-0595-49f9-8a28-dca81d2140fd"
+      },
+      {
+        "id": "f2a9c457-0190-4eee-86ce-9c249a9af83e",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T10:35:13.772Z",
+        "updated_at": "2023-08-20T22:12:33.750Z",
+        "truck_id": "a35f61a0-b441-47c7-baf4-2ae576a1c3ec"
+      },
+      {
+        "id": "49baf81f-676f-4755-999a-216c7a1e14d6",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-21T00:14:54.043Z",
+        "updated_at": "2023-08-21T01:19:57.583Z",
+        "truck_id": "dbc6f56b-2483-4da0-b839-90e7a56b1fbd"
+      },
+      {
+        "id": "931fed9d-5ebf-47d0-8d46-af87dcbf255c",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-21T02:16:33.001Z",
+        "updated_at": "2023-08-21T00:00:39.222Z",
+        "truck_id": "a35f61a0-b441-47c7-baf4-2ae576a1c3ec"
+      }
+    ],
+    "booking": [
+      {
+        "id": "ab327c56-dec8-40c4-93b8-ead27ac556ca",
+        "cargo_space_booked": 68478,
+        "booking_cost": 84203,
+        "created_at": "2023-08-21T03:39:40.384Z",
+        "updated_at": "2023-08-21T04:16:48.955Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "f2a9c457-0190-4eee-86ce-9c249a9af83e",
+        "truck_id": "a35f61a0-b441-47c7-baf4-2ae576a1c3ec"
+      },
+      {
+        "id": "455e0e1d-d43c-4c03-8c6f-7e1300fe1f71",
+        "cargo_space_booked": 62810,
+        "booking_cost": 57970,
+        "created_at": "2023-08-20T23:18:08.173Z",
+        "updated_at": "2023-08-20T19:47:26.040Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "f2a9c457-0190-4eee-86ce-9c249a9af83e",
+        "truck_id": "f64e2a40-3c07-4cab-93af-7fc7a33e79c9"
+      },
+      {
+        "id": "98f35d87-7060-4d1b-876d-72e146b74709",
+        "cargo_space_booked": 98670,
+        "booking_cost": 62359,
+        "created_at": "2023-08-20T22:16:09.794Z",
+        "updated_at": "2023-08-20T21:30:22.141Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "f2a9c457-0190-4eee-86ce-9c249a9af83e",
+        "truck_id": "dbc6f56b-2483-4da0-b839-90e7a56b1fbd"
+      },
+      {
+        "id": "7e6b2c65-4461-4186-a0da-ee5fcfe5397b",
+        "cargo_space_booked": 29100,
+        "booking_cost": 20781,
+        "created_at": "2023-08-20T09:11:24.667Z",
+        "updated_at": "2023-08-20T09:22:26.406Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "43585255-4202-4451-9a6e-a03affa959ec",
+        "truck_id": "f64e2a40-3c07-4cab-93af-7fc7a33e79c9"
+      },
+      {
+        "id": "b7550213-01c5-475e-9231-ade44a230ab6",
+        "cargo_space_booked": 72828,
+        "booking_cost": 12807,
+        "created_at": "2023-08-21T04:45:47.912Z",
+        "updated_at": "2023-08-20T17:55:26.266Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "43585255-4202-4451-9a6e-a03affa959ec",
+        "truck_id": "ee49dbcc-9698-4925-b62c-b8a2398ef752"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "bfddfc92-2d1a-4f82-ab4c-8dd2a91cb443",
+        "transaction_amount": 62237,
+        "created_at": "2023-08-21T03:54:53.436Z",
+        "updated_at": "2023-08-21T07:03:09.027Z",
+        "booking_id": "7e6b2c65-4461-4186-a0da-ee5fcfe5397b",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "1ba7b253-7f5d-4a0d-9145-400df285c448",
+        "transaction_amount": 31024,
+        "created_at": "2023-08-21T00:49:59.126Z",
+        "updated_at": "2023-08-20T12:19:26.969Z",
+        "booking_id": "7e6b2c65-4461-4186-a0da-ee5fcfe5397b",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "1365cd5c-ca89-4b88-b97d-93cc324a7748",
+        "transaction_amount": 45491,
+        "created_at": "2023-08-20T15:23:23.294Z",
+        "updated_at": "2023-08-21T00:23:01.559Z",
+        "booking_id": "455e0e1d-d43c-4c03-8c6f-7e1300fe1f71",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "ce4ce2dc-823b-4527-8977-0dcb5769c083",
+        "transaction_amount": 24185,
+        "created_at": "2023-08-21T02:47:37.869Z",
+        "updated_at": "2023-08-20T21:05:07.318Z",
+        "booking_id": "b7550213-01c5-475e-9231-ade44a230ab6",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "b11c6b8d-c67b-4137-b7ea-48c686614129",
+        "transaction_amount": 18660,
+        "created_at": "2023-08-20T12:27:17.565Z",
+        "updated_at": "2023-08-20T09:31:25.081Z",
+        "booking_id": "455e0e1d-d43c-4c03-8c6f-7e1300fe1f71",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "258f87f6-b1b8-43ed-962e-65e1861159c0",
+        "email": "Stella4@gmail.com",
+        "firstName": "Damon",
+        "lastName": "Stark",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/991.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1f4a3345-619d-4b44-ac66-ea706240446d",
+        "email": "Trevor59@hotmail.com",
+        "firstName": "Xavier",
+        "lastName": "Keeling",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13096066",
+        "tenantId": null
+      },
+      {
+        "reference": "1ab87a05-1a94-4b81-b34e-a6e5392a5b12",
+        "email": "Elvis81@gmail.com",
+        "firstName": "Nannie",
+        "lastName": "Purdy",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/48741234",
+        "tenantId": null
+      },
+      {
+        "reference": "5287a1d3-1045-4d5a-b4eb-90e81ba922ce",
+        "email": "Amira.Douglas48@yahoo.com",
+        "firstName": "Zetta",
+        "lastName": "Tremblay",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/78.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "da03a852-5757-47e3-9999-5a7a90eac3e0",
+        "email": "Etha90@gmail.com",
+        "firstName": "Stephania",
+        "lastName": "Farrell",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/618.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "aa2de468-3b11-4d94-9220-754068c4256d",
+        "name": "TruckA",
+        "cargo_space": 47548,
+        "created_at": "2023-08-20T15:31:16.473Z",
+        "updated_at": "2023-08-20T23:09:29.815Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "b90ad13f-32bd-4d89-bfd5-4c11330de37b",
+        "name": "TruckB",
+        "cargo_space": 28602,
+        "created_at": "2023-08-21T04:57:30.666Z",
+        "updated_at": "2023-08-20T22:58:38.994Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "6830d875-7ff0-4d95-b084-d2a47e491768",
+        "name": "TruckC",
+        "cargo_space": 69412,
+        "created_at": "2023-08-20T08:20:23.033Z",
+        "updated_at": "2023-08-20T12:32:34.929Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "ad7f0ad2-97dc-4e5a-a827-23a1551ee89f",
+        "name": "TruckD",
+        "cargo_space": 75676,
+        "created_at": "2023-08-21T07:34:45.388Z",
+        "updated_at": "2023-08-21T03:09:13.402Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "335faaaa-590a-4d91-9a8d-b44241d73617",
+        "name": "TruckE",
+        "cargo_space": 54247,
+        "created_at": "2023-08-20T15:37:24.073Z",
+        "updated_at": "2023-08-20T23:25:14.572Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "1483ccb2-ea9d-4e0f-85e6-3741adb52228",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-21T03:27:17.751Z",
+        "updated_at": "2023-08-20T10:45:24.715Z",
+        "truck_id": "ad7f0ad2-97dc-4e5a-a827-23a1551ee89f"
+      },
+      {
+        "id": "5307c88f-f610-4273-983d-5bfea91c7ef0",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T19:37:53.589Z",
+        "updated_at": "2023-08-20T20:14:47.366Z",
+        "truck_id": "335faaaa-590a-4d91-9a8d-b44241d73617"
+      },
+      {
+        "id": "82e8e144-f105-4fe9-a768-1f39c02a6044",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T11:57:17.160Z",
+        "updated_at": "2023-08-20T19:25:44.653Z",
+        "truck_id": "b90ad13f-32bd-4d89-bfd5-4c11330de37b"
+      },
+      {
+        "id": "883dfecc-b12a-4ef0-ae25-d5138c6ca8d2",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-20T08:12:19.963Z",
+        "updated_at": "2023-08-21T05:18:17.029Z",
+        "truck_id": "b90ad13f-32bd-4d89-bfd5-4c11330de37b"
+      },
+      {
+        "id": "a992adb0-b8ff-4e90-917b-316188928761",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-21T06:46:37.264Z",
+        "updated_at": "2023-08-20T11:26:38.243Z",
+        "truck_id": "6830d875-7ff0-4d95-b084-d2a47e491768"
+      }
+    ],
+    "booking": [
+      {
+        "id": "c8dcfd9b-847b-4219-90c7-623fd2e15d54",
+        "cargo_space_booked": 98821,
+        "booking_cost": 43897,
+        "created_at": "2023-08-21T01:56:37.646Z",
+        "updated_at": "2023-08-20T18:09:27.657Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "82e8e144-f105-4fe9-a768-1f39c02a6044",
+        "truck_id": "b90ad13f-32bd-4d89-bfd5-4c11330de37b"
+      },
+      {
+        "id": "5148549c-aec9-4389-b2eb-91295a2219db",
+        "cargo_space_booked": 5608,
+        "booking_cost": 90300,
+        "created_at": "2023-08-21T05:58:47.640Z",
+        "updated_at": "2023-08-20T23:45:54.404Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "1483ccb2-ea9d-4e0f-85e6-3741adb52228",
+        "truck_id": "335faaaa-590a-4d91-9a8d-b44241d73617"
+      },
+      {
+        "id": "c18b74c2-a313-411f-a1d7-1693ea8f637c",
+        "cargo_space_booked": 19610,
+        "booking_cost": 95878,
+        "created_at": "2023-08-20T13:21:43.341Z",
+        "updated_at": "2023-08-20T23:08:37.531Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "883dfecc-b12a-4ef0-ae25-d5138c6ca8d2",
+        "truck_id": "aa2de468-3b11-4d94-9220-754068c4256d"
+      },
+      {
+        "id": "0d13f3a9-15e0-4339-914d-883061b7748b",
+        "cargo_space_booked": 33576,
+        "booking_cost": 81782,
+        "created_at": "2023-08-20T20:10:07.624Z",
+        "updated_at": "2023-08-20T09:00:14.916Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "5307c88f-f610-4273-983d-5bfea91c7ef0",
+        "truck_id": "6830d875-7ff0-4d95-b084-d2a47e491768"
+      },
+      {
+        "id": "1251243c-abf5-4396-b505-ceb26b401536",
+        "cargo_space_booked": 90751,
+        "booking_cost": 6703,
+        "created_at": "2023-08-20T13:26:24.388Z",
+        "updated_at": "2023-08-20T12:52:50.341Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "1483ccb2-ea9d-4e0f-85e6-3741adb52228",
+        "truck_id": "335faaaa-590a-4d91-9a8d-b44241d73617"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "bd63aaa5-080a-490e-b641-422fe6f968fd",
+        "transaction_amount": 67930,
+        "created_at": "2023-08-21T01:39:26.146Z",
+        "updated_at": "2023-08-20T11:14:48.627Z",
+        "booking_id": "0d13f3a9-15e0-4339-914d-883061b7748b",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "ee387284-6312-4c68-860d-6f5a98d30146",
+        "transaction_amount": 97683,
+        "created_at": "2023-08-20T12:04:06.997Z",
+        "updated_at": "2023-08-21T06:01:01.070Z",
+        "booking_id": "5148549c-aec9-4389-b2eb-91295a2219db",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "cafdf646-e472-4772-9f40-11085ee5ece2",
+        "transaction_amount": 58630,
+        "created_at": "2023-08-21T05:30:17.047Z",
+        "updated_at": "2023-08-20T13:44:54.341Z",
+        "booking_id": "c8dcfd9b-847b-4219-90c7-623fd2e15d54",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "d9f49b79-af36-4623-8147-582cf0e179c9",
+        "transaction_amount": 94692,
+        "created_at": "2023-08-20T10:39:19.425Z",
+        "updated_at": "2023-08-20T23:40:29.339Z",
+        "booking_id": "5148549c-aec9-4389-b2eb-91295a2219db",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "38556c80-9923-4d9b-a8ab-589fbd16fecb",
+        "transaction_amount": 3466,
+        "created_at": "2023-08-20T20:02:19.944Z",
+        "updated_at": "2023-08-20T17:23:32.759Z",
+        "booking_id": "5148549c-aec9-4389-b2eb-91295a2219db",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "a9dcc5df-adb0-40e6-aef3-4ccb3ff55bd7",
+        "email": "Dan.Haley79@gmail.com",
+        "firstName": "Bruce",
+        "lastName": "Wyman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/846.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "578da07f-a491-494c-ae08-0696af0c4723",
+        "email": "Idella.Streich39@gmail.com",
+        "firstName": "Sammy",
+        "lastName": "Brown",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/47699227",
+        "tenantId": null
+      },
+      {
+        "reference": "96a22ac4-c822-46a1-bea2-7d674ef64302",
+        "email": "Isac9@gmail.com",
+        "firstName": "Brittany",
+        "lastName": "Bartoletti",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/288.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1179d3c8-5dd9-43e3-b6a1-45e444871cf1",
+        "email": "Aaron67@hotmail.com",
+        "firstName": "Fredrick",
+        "lastName": "Kuvalis",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/28.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "aa430c37-c741-467f-97f6-20227a714a6f",
+        "email": "Cleveland23@gmail.com",
+        "firstName": "Chadd",
+        "lastName": "Langworth",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/772.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "a377f7af-9b64-47c2-a7cf-453a5a450f22",
+        "name": "Ford F-150",
+        "cargo_space": 48485,
+        "created_at": "2023-08-21T01:55:02.825Z",
+        "updated_at": "2023-08-21T07:45:58.733Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "8bec0ccf-8e19-4ec2-9894-822115774304",
+        "name": "Chevrolet Silverado",
+        "cargo_space": 27044,
+        "created_at": "2023-08-21T00:25:28.749Z",
+        "updated_at": "2023-08-20T08:47:42.821Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "dd6f9c77-2210-41a7-a129-99b1a18a3a0d",
+        "name": "Toyota Tacoma",
+        "cargo_space": 15523,
+        "created_at": "2023-08-21T07:07:15.185Z",
+        "updated_at": "2023-08-20T23:03:09.490Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "386d2ecf-898e-4349-92d7-9d84040ebfd8",
+        "name": "GMC Sierra",
+        "cargo_space": 37820,
+        "created_at": "2023-08-21T00:20:29.739Z",
+        "updated_at": "2023-08-21T06:17:53.461Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "c1f2c907-2f04-43a7-b547-1e9e326de60d",
+        "name": "Ram 1500",
+        "cargo_space": 45793,
+        "created_at": "2023-08-20T11:33:36.426Z",
+        "updated_at": "2023-08-20T20:23:21.985Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "19a2ae12-c8df-4b14-b053-6ccc6e184c70",
+        "origin": "New York, NY",
+        "destination": "Miami, FL",
+        "created_at": "2023-08-20T10:10:39.673Z",
+        "updated_at": "2023-08-20T23:47:06.518Z",
+        "truck_id": "dd6f9c77-2210-41a7-a129-99b1a18a3a0d"
+      },
+      {
+        "id": "2025b7a3-7c48-4688-81ec-32d6faafbd17",
+        "origin": "Los Angeles, CA",
+        "destination": "Seattle, WA",
+        "created_at": "2023-08-20T08:44:10.114Z",
+        "updated_at": "2023-08-21T07:04:44.000Z",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      },
+      {
+        "id": "e41a586a-907a-4a53-926f-a1c6a358f4a1",
+        "origin": "Chicago, IL",
+        "destination": "Boston, MA",
+        "created_at": "2023-08-20T17:30:14.687Z",
+        "updated_at": "2023-08-20T20:29:18.411Z",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      },
+      {
+        "id": "6ef2225c-c70d-45c2-bbe2-fb874dbc5ff7",
+        "origin": "Houston, TX",
+        "destination": "Denver, CO",
+        "created_at": "2023-08-21T05:14:50.807Z",
+        "updated_at": "2023-08-21T02:18:26.665Z",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      },
+      {
+        "id": "bb94f7e9-71ac-4ece-a73f-1665f79c9bba",
+        "origin": "Phoenix, AZ",
+        "destination": "Atlanta, GA",
+        "created_at": "2023-08-20T20:48:41.075Z",
+        "updated_at": "2023-08-21T00:04:31.409Z",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      }
+    ],
+    "booking": [
+      {
+        "id": "036ad59d-0ab9-464f-8325-48b147d337d5",
+        "cargo_space_booked": 35578,
+        "booking_cost": 85978,
+        "created_at": "2023-08-21T04:36:33.958Z",
+        "updated_at": "2023-08-21T05:48:00.617Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "19a2ae12-c8df-4b14-b053-6ccc6e184c70",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      },
+      {
+        "id": "447df302-2607-4786-ac3c-ac6864a9de6d",
+        "cargo_space_booked": 2676,
+        "booking_cost": 96013,
+        "created_at": "2023-08-20T09:53:44.133Z",
+        "updated_at": "2023-08-20T21:05:26.715Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "bb94f7e9-71ac-4ece-a73f-1665f79c9bba",
+        "truck_id": "a377f7af-9b64-47c2-a7cf-453a5a450f22"
+      },
+      {
+        "id": "1f28169a-4ac5-43b9-a7c6-0f25b23a940d",
+        "cargo_space_booked": 4735,
+        "booking_cost": 88847,
+        "created_at": "2023-08-20T10:23:50.765Z",
+        "updated_at": "2023-08-20T12:30:47.504Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "e41a586a-907a-4a53-926f-a1c6a358f4a1",
+        "truck_id": "8bec0ccf-8e19-4ec2-9894-822115774304"
+      },
+      {
+        "id": "d5cadafc-8b45-46ea-bf1b-ef5aba406613",
+        "cargo_space_booked": 66277,
+        "booking_cost": 62282,
+        "created_at": "2023-08-20T14:16:57.821Z",
+        "updated_at": "2023-08-21T04:21:54.214Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "bb94f7e9-71ac-4ece-a73f-1665f79c9bba",
+        "truck_id": "dd6f9c77-2210-41a7-a129-99b1a18a3a0d"
+      },
+      {
+        "id": "9939b456-e7f4-42b7-add2-78aa4dd5873c",
+        "cargo_space_booked": 93433,
+        "booking_cost": 65556,
+        "created_at": "2023-08-20T17:56:47.039Z",
+        "updated_at": "2023-08-21T04:52:55.448Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "2025b7a3-7c48-4688-81ec-32d6faafbd17",
+        "truck_id": "c1f2c907-2f04-43a7-b547-1e9e326de60d"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "312240d3-ed30-4602-a16a-7be671235d53",
+        "transaction_amount": 16430,
+        "created_at": "2023-08-20T12:03:54.070Z",
+        "updated_at": "2023-08-20T16:23:40.468Z",
+        "booking_id": "1f28169a-4ac5-43b9-a7c6-0f25b23a940d",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "946e3906-3533-4f79-8978-819c54842f9f",
+        "transaction_amount": 72448,
+        "created_at": "2023-08-20T23:42:14.429Z",
+        "updated_at": "2023-08-20T23:38:52.153Z",
+        "booking_id": "447df302-2607-4786-ac3c-ac6864a9de6d",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "b2cb29c4-409a-44d4-b251-a7a0390b344f",
+        "transaction_amount": 68996,
+        "created_at": "2023-08-20T13:40:37.559Z",
+        "updated_at": "2023-08-21T05:41:58.366Z",
+        "booking_id": "9939b456-e7f4-42b7-add2-78aa4dd5873c",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "6fd59952-db05-4af2-9b76-6657a330322e",
+        "transaction_amount": 44077,
+        "created_at": "2023-08-20T18:12:06.561Z",
+        "updated_at": "2023-08-21T02:13:53.623Z",
+        "booking_id": "9939b456-e7f4-42b7-add2-78aa4dd5873c",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "6674e9e4-db00-4396-a224-294da133a669",
+        "transaction_amount": 99600,
+        "created_at": "2023-08-20T15:08:22.854Z",
+        "updated_at": "2023-08-21T04:42:28.405Z",
+        "booking_id": "036ad59d-0ab9-464f-8325-48b147d337d5",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "f5aa6c5d-2eee-446f-9c51-d2588b61e563",
+        "email": "Guadalupe_Dach@gmail.com",
+        "firstName": "Rita",
+        "lastName": "Wintheiser",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/322.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2760f144-6f22-4a83-a67e-2eb625ec9aaf",
+        "email": "Kristian.Morissette@gmail.com",
+        "firstName": "Torrey",
+        "lastName": "Robel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/50321136",
+        "tenantId": null
+      },
+      {
+        "reference": "7766b7ef-faed-407e-8d91-5ed1e40140c0",
+        "email": "Alba.Spinka5@gmail.com",
+        "firstName": "Betty",
+        "lastName": "Little",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/369.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0861f97a-bcc8-4b77-93d3-bf91ea8d87d4",
+        "email": "Elinor.Beer@hotmail.com",
+        "firstName": "Marisa",
+        "lastName": "Lemke",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/10027553",
+        "tenantId": null
+      },
+      {
+        "reference": "dba6cd4f-0784-484f-9e52-e8193dfeb726",
+        "email": "Alanna52@yahoo.com",
+        "firstName": "Javon",
+        "lastName": "Gleason",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/700.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "truck": [
+      {
+        "id": "094359c1-04cf-44fb-b69a-597a677f190c",
+        "name": "Truck 1",
+        "cargo_space": 62668,
+        "created_at": "2023-08-20T18:45:30.718Z",
+        "updated_at": "2023-08-20T23:06:21.335Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "3ecd07a8-ba94-4235-9001-618b7b8dbca9",
+        "name": "Truck 2",
+        "cargo_space": 81739,
+        "created_at": "2023-08-20T16:22:35.206Z",
+        "updated_at": "2023-08-21T06:33:48.602Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "f08b488f-0ecb-4251-9ab3-b98fe4d55b6b",
+        "name": "Truck 3",
+        "cargo_space": 55738,
+        "created_at": "2023-08-21T01:11:43.641Z",
+        "updated_at": "2023-08-20T16:07:59.425Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "2198cd68-13f2-435a-87a0-9d239ac5348b",
+        "name": "Truck 4",
+        "cargo_space": 32811,
+        "created_at": "2023-08-21T01:32:06.492Z",
+        "updated_at": "2023-08-21T02:59:53.606Z",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "df87c1e6-9511-410e-9526-f8f21f1be04e",
+        "name": "Truck 5",
+        "cargo_space": 23015,
+        "created_at": "2023-08-20T09:43:46.270Z",
+        "updated_at": "2023-08-21T01:50:14.789Z",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "route": [
+      {
+        "id": "41f3da75-893c-4c89-9cbc-686429ed5d9d",
+        "origin": "New York",
+        "destination": "San Francisco",
+        "created_at": "2023-08-20T12:02:00.568Z",
+        "updated_at": "2023-08-20T09:06:50.763Z",
+        "truck_id": "3ecd07a8-ba94-4235-9001-618b7b8dbca9"
+      },
+      {
+        "id": "b0df5083-6dd8-4cfe-bd62-f5933e7bd11e",
+        "origin": "Los Angeles",
+        "destination": "Seattle",
+        "created_at": "2023-08-20T22:45:41.266Z",
+        "updated_at": "2023-08-20T13:41:38.354Z",
+        "truck_id": "2198cd68-13f2-435a-87a0-9d239ac5348b"
+      },
+      {
+        "id": "0171e05c-0c7e-4d42-98a8-be0fc5c0410e",
+        "origin": "Chicago",
+        "destination": "Denver",
+        "created_at": "2023-08-20T20:53:20.228Z",
+        "updated_at": "2023-08-20T12:08:33.945Z",
+        "truck_id": "f08b488f-0ecb-4251-9ab3-b98fe4d55b6b"
+      },
+      {
+        "id": "670224a9-74f9-47d6-ac74-2a6cefb56236",
+        "origin": "Houston",
+        "destination": "Atlanta",
+        "created_at": "2023-08-21T01:21:46.932Z",
+        "updated_at": "2023-08-20T15:05:36.595Z",
+        "truck_id": "f08b488f-0ecb-4251-9ab3-b98fe4d55b6b"
+      },
+      {
+        "id": "04fb7465-52d2-424d-95b2-abe215185934",
+        "origin": "Miami",
+        "destination": "Boston",
+        "created_at": "2023-08-20T20:48:36.525Z",
+        "updated_at": "2023-08-21T02:25:43.739Z",
+        "truck_id": "3ecd07a8-ba94-4235-9001-618b7b8dbca9"
+      }
+    ],
+    "booking": [
+      {
+        "id": "e902c667-ae8a-4f80-bdec-a576ae318b56",
+        "cargo_space_booked": 32872,
+        "booking_cost": 22433,
+        "created_at": "2023-08-20T17:21:07.291Z",
+        "updated_at": "2023-08-20T18:37:30.011Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "41f3da75-893c-4c89-9cbc-686429ed5d9d",
+        "truck_id": "094359c1-04cf-44fb-b69a-597a677f190c"
+      },
+      {
+        "id": "25b3c9bc-314e-47cd-a1e7-93e0ec583ca3",
+        "cargo_space_booked": 89827,
+        "booking_cost": 55668,
+        "created_at": "2023-08-21T03:05:47.536Z",
+        "updated_at": "2023-08-20T08:16:48.025Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "04fb7465-52d2-424d-95b2-abe215185934",
+        "truck_id": "2198cd68-13f2-435a-87a0-9d239ac5348b"
+      },
+      {
+        "id": "0a62548a-242a-4f8b-862a-916410420ce0",
+        "cargo_space_booked": 86050,
+        "booking_cost": 13798,
+        "created_at": "2023-08-20T13:46:18.580Z",
+        "updated_at": "2023-08-21T02:53:25.075Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "04fb7465-52d2-424d-95b2-abe215185934",
+        "truck_id": "2198cd68-13f2-435a-87a0-9d239ac5348b"
+      },
+      {
+        "id": "e0962620-e176-4ecb-bcc8-e3df23e229ec",
+        "cargo_space_booked": 32951,
+        "booking_cost": 63838,
+        "created_at": "2023-08-20T12:34:42.239Z",
+        "updated_at": "2023-08-21T03:13:33.371Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "b0df5083-6dd8-4cfe-bd62-f5933e7bd11e",
+        "truck_id": "2198cd68-13f2-435a-87a0-9d239ac5348b"
+      },
+      {
+        "id": "8cda6f14-ee4e-4771-b0bb-a9cdfe6fe4f9",
+        "cargo_space_booked": 66826,
+        "booking_cost": 70430,
+        "created_at": "2023-08-21T05:43:02.992Z",
+        "updated_at": "2023-08-21T01:37:27.103Z",
+        "guest_id": "user_entity_pk",
+        "route_id": "b0df5083-6dd8-4cfe-bd62-f5933e7bd11e",
+        "truck_id": "2198cd68-13f2-435a-87a0-9d239ac5348b"
+      }
+    ],
+    "transaction": [
+      {
+        "id": "644e0ca2-b376-4182-a7ad-405460857322",
+        "transaction_amount": 40259,
+        "created_at": "2023-08-20T10:01:58.450Z",
+        "updated_at": "2023-08-20T19:59:53.991Z",
+        "booking_id": "25b3c9bc-314e-47cd-a1e7-93e0ec583ca3",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "15cec0d5-b78d-42ae-85bc-3c1f14f046ff",
+        "transaction_amount": 17489,
+        "created_at": "2023-08-20T13:40:31.284Z",
+        "updated_at": "2023-08-21T01:06:43.016Z",
+        "booking_id": "e0962620-e176-4ecb-bcc8-e3df23e229ec",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "69f12909-3730-483e-b4df-7d6dc64a40ee",
+        "transaction_amount": 82863,
+        "created_at": "2023-08-21T03:36:02.698Z",
+        "updated_at": "2023-08-21T05:30:51.449Z",
+        "booking_id": "25b3c9bc-314e-47cd-a1e7-93e0ec583ca3",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "0fb06f46-5203-4b13-aa20-6b2d01a73a78",
+        "transaction_amount": 30417,
+        "created_at": "2023-08-21T00:18:16.263Z",
+        "updated_at": "2023-08-20T11:59:50.416Z",
+        "booking_id": "25b3c9bc-314e-47cd-a1e7-93e0ec583ca3",
+        "platform_id": "main_entity_pk"
+      },
+      {
+        "id": "4ea3ee4f-17f3-4b76-ab3a-a71b664e9e87",
+        "transaction_amount": 3693,
+        "created_at": "2023-08-21T06:55:29.852Z",
+        "updated_at": "2023-08-20T15:33:15.598Z",
+        "booking_id": "8cda6f14-ee4e-4771-b0bb-a9cdfe6fe4f9",
+        "platform_id": "main_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "8bd9dd66-c969-4006-b65f-62f842a371e4",
+        "email": "Felipa.Hartmann@yahoo.com",
+        "firstName": "Alf",
+        "lastName": "Bins",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/43.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "681b9b3d-23d0-40e4-841e-3cc247858cae",
+        "email": "Jaleel44@hotmail.com",
+        "firstName": "Cleora",
+        "lastName": "Lebsack",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1026.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "fca42d1f-5526-4421-a0ae-8f9244ee9c95",
+        "email": "Ibrahim4@gmail.com",
+        "firstName": "Ethan",
+        "lastName": "Schaden",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54385769",
+        "tenantId": null
+      },
+      {
+        "reference": "c24326f6-41a7-46ec-ab75-5c789fca481c",
+        "email": "Eden89@gmail.com",
+        "firstName": "Lois",
+        "lastName": "Abshire",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1116.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "22ae5068-b867-4622-b87a-2a1bfa34b2ef",
+        "email": "Phyllis_Wiza37@hotmail.com",
+        "firstName": "Jayde",
+        "lastName": "Johns",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62449888",
+        "tenantId": null
+      }
+    ]
+  }
+]
